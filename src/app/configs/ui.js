@@ -371,25 +371,21 @@ const albums = [...albumA, ...albumB, ...albumC]; // for preview
 const metaData = {
   main: {
     title: "Báo Hỉ An - Ngọc | Kính Mời",
-    graphImage:
-      "https://res.cloudinary.com/do6sozxbo/image/upload/v1730558395/wedding5/land.jpg",
+    graphImage: getImgSrc(img9),
   },
 
   wish: {
     title: "Tất cả lời chúc dành cho An - Ngọc",
-    graphImage:
-      "https://res.cloudinary.com/do6sozxbo/image/upload/v1730558395/wedding5/am11.jpg",
+    graphImage: getImgSrc(img10),
   },
 
   invitation: {
     title: "Báo Hỉ | Form Nhập Tên",
-    graphImage:
-      "https://res.cloudinary.com/do6sozxbo/image/upload/v1730394150/wedding5_1/a3.jpg",
+    graphImage: getImgSrc(img11),
   },
   album: {
     title: "Album của An - Ngọc`",
-    graphImage:
-      "https://res.cloudinary.com/do6sozxbo/image/upload/v1730558395/wedding5/final3.jpg",
+    graphImage: getImgSrc(img12),
   },
 };
 
