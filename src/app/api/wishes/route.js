@@ -8,8 +8,8 @@ function formatIsAttend(isAttend) {
 }
 
 async function sendTelegramMessage(payload) {
-  const botToken = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
+  const botToken = '8295498183:AAFNHcckA7h5WTXgRBQcGKb-3njfDTDVPPc';
+  const chatId = '7065130108';
   if (!botToken || !chatId) return false;
 
   const message = [
