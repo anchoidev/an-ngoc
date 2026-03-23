@@ -64,13 +64,25 @@ const configConfetti = {
 const weddingInfo = [
   {
     time: {
-      date: "11/04",
+      date: "10/04",
       year: "2026",
-      time: "11:00",
-      full: "Thứ Bảy, Ngày 11 Tháng 4 năm 2026",
+      time: "18:00",
+      donKhachTime: "17:00",
+      full: "Thứ Sáu, Ngày 10 Tháng 4 năm 2026",
     },
     address: "Số nhà 04 Đường số 2, Thôn Mỹ Cầu, Hoằng Giang, Thanh Hoá",
-    street: "19°54'47.4\"N 105°46'12.9\"E",
+    phone: "0394846200",
+    posision: "bottom left",
+  },
+  {
+    time: {
+      date: "10/04",
+      year: "2026",
+      time: "17:00",
+      donKhachTime: "16:00",
+      full: "Thứ Sáu, Ngày 10 Tháng 4 năm 2026",
+    },
+    address: "Số nhà 40 Ngõ Thanh Xuân , Thôn Lê Dương, Tam Hưng, Thanh Oai, Hà Nội",
     phone: "0394846200",
     posision: "bottom left",
   },

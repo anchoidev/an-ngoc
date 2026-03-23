@@ -3,6 +3,7 @@ import styles from "./invitation.module.scss";
 import classNames from "classnames/bind";
 import Days from "./days/days";
 import Infomation from "./infomation";
+import WeddingInfo from "./weddingInfo/weddingInfo";
 import { weddingInfo, invitationSection } from "@/app/configs/ui";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
@@ -11,6 +12,7 @@ const cx = classNames.bind(styles);
 
 function Invitation() {
   const wedInfo = weddingInfo[0];
+  const wedInfo2 = weddingInfo[1];
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -44,6 +46,21 @@ function Invitation() {
         </div>
       </div>
       <Days title="Tháng 4" activeDay={invitationSection.activeDay} />
+
+      <WeddingInfo
+        familyTitle="TIỆC CƯỚI NHÀ TRAI"
+        time={wedInfo.time}
+        address={wedInfo.address}
+        street={wedInfo.street}
+      />
+
+      <WeddingInfo
+        familyTitle="TIỆC CƯỚI NHÀ GÁI"
+        time={{ ...wedInfo2.time}}
+        address={wedInfo2.address}
+        street={wedInfo2.street}
+      />
+
       <Infomation
         img={wedInfo.img}
         title={wedInfo.title}

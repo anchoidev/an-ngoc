@@ -28,7 +28,8 @@ function Infomation({
           style={{
             transform: boxInView ? "none" : "translateY(150px)",
             opacity: boxInView ? 1 : 0,
-            transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition:
+              "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
           {time.date}
@@ -38,7 +39,8 @@ function Infomation({
           style={{
             transform: boxInView ? "none" : "translateY(150px)",
             opacity: boxInView ? 1 : 0,
-            transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
+            transition:
+              "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
           }}
         >
           {time.year}
@@ -48,7 +50,8 @@ function Infomation({
           style={{
             transform: boxInView ? "none" : "translateY(150px)",
             opacity: boxInView ? 1 : 0,
-            transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
+            transition:
+              "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
           }}
         >
           {time.time}
