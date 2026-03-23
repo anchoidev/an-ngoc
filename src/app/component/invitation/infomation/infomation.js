@@ -13,7 +13,7 @@ function Infomation({
   img = "",
   time = "",
   address = "",
-  street = "",
+  street = "19.91308, 105.7703",
   phone = "",
 }) {
   const boxRef = useRef();
