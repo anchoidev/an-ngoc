@@ -13,6 +13,7 @@ const cx = classNames.bind(styles);
 function Invitation() {
   const wedInfo = weddingInfo[0];
   const wedInfo2 = weddingInfo[1];
+  const wedInfo3 = weddingInfo[2];
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -62,14 +63,14 @@ function Invitation() {
       />
 
       <Infomation
-        img={wedInfo.img}
-        title={wedInfo.title}
-        date={wedInfo.date}
-        time={wedInfo.time}
-        address={wedInfo.address}
-        street={wedInfo.street}
-        phone={wedInfo.phone}
-        posision={wedInfo.posision}
+        img={wedInfo3.img}
+        title={wedInfo3.title}
+        date={wedInfo3.date}
+        time={{ ...wedInfo3.time}}
+        address={wedInfo3.address}
+        street={wedInfo3.street}
+        phone={wedInfo3.phone}
+        posision={wedInfo3.posision}
       />
     </div>
   );

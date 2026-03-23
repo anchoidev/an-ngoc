@@ -86,6 +86,18 @@ const weddingInfo = [
     phone: "0394846200",
     posision: "bottom left",
   },
+  {
+    time: {
+      date: "11/04",
+      year: "2026",
+      time: "11:00",
+      donKhachTime: "11:00",
+      full: "Thứ Bảy, Ngày 11 Tháng 4 năm 2026",
+    },
+    address: "Số nhà 04 Đường số 2, Thôn Mỹ Cầu, Hoằng Giang, Thanh Hoá",
+    phone: "0394846200",
+    posision: "bottom left",
+  },
 ];
 
 // April 2026
