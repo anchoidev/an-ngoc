@@ -8,7 +8,7 @@ function formatIsAttend(isAttend) {
 }
 
 async function sendTelegramMessage(payload) {
-  const botToken = '8295498183:AAFNHcckA7h5WTXgRBQcGKb-3njfDTDVPPc';
+  const botToken = '8791862647:AAGw5bDvrZitSMp3UsuEh30--6_Ffgasl2Y';
   const chatId = '7065130108';
   if (!botToken || !chatId) return false;
 
