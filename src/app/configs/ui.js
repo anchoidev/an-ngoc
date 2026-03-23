@@ -36,6 +36,7 @@ const img24 = require("../albums/images/z7591994239061_28c2a5ce4560b43f67f345d16
 const img25 = require("../albums/images/z7591994133725_94d41ee776c894b429b46a55117fbcc4.jpg");
 const img26 = require("../albums/images/z7582844974217_148ab95e1bdd73d0d968d28abdfaf57d.jpg");
 const img27 = require("../albums/images/z7582844986561_410c0fe6d2639f80770c7a483521be7f.jpg");
+const graphImage = require("../albums/images/pg.jpg");
 
 const WISH_API_LINK =
   "/api/wishes"; // Next.js API route (proxy Google Sheets + Telegram)
@@ -371,7 +372,7 @@ const albums = [...albumA, ...albumB, ...albumC]; // for preview
 const metaData = {
   main: {
     title: "Báo Hỉ An - Ngọc | Kính Mời",
-    graphImage: getImgSrc(img9),
+    graphImage: graphImage.default?.src || graphImage,
   },
 
   wish: {
