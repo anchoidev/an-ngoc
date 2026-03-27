@@ -9,15 +9,22 @@ export async function generateMetadata({ params, searchParams }, parent) {
     `https://ngoc-an-minh-ngoc.vercel.app`;
 
   const name = searchParams.name || "You";
-  const image = new URL(String(metaData.main.graphImage), base).toString();
+    const image = new URL(String(metaData.main.graphImage), base).toString();
 
-  return {
-    title: `${metaData.main.title} ${name}`,
-    description: metaData.main.description,
-    openGraph: {
-      images: [image, ...previousImages],
-    },
-  };
+    return {
+      title: `${metaData.main.title} ${name}`,
+      description: metaData.main.description,
+      openGraph: {
+        // Provide a richer object for images (url + dimensions + alt) — helps crawlers
+        images: [{ url: image, width: 1200, height: 630, alt: metaData.main.title }, ...previousImages],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: `${metaData.main.title} ${name}`,
+        description: metaData.main.description,
+        images: [image],
+      },
+    };
 }
 
 export default function Page({ params, searchParams }) {

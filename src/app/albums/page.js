@@ -13,7 +13,13 @@ export async function generateMetadata({}, parent) {
     title: metaData.album.title,
     description: metaData.album.description,
     openGraph: {
-      images: [image, ...previousImages],
+      images: [{ url: image, width: 1200, height: 630, alt: metaData.album.title }, ...previousImages],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: metaData.album.title,
+      description: metaData.album.description,
+      images: [image],
     },
   };
 }

@@ -14,7 +14,13 @@ export async function generateMetadata({ params, searchParams }, parent) {
     title: metaData.wish.title,
     description: metaData.wish.description,
     openGraph: {
-      images: [image, ...previousImages],
+      images: [{ url: image, width: 1200, height: 630, alt: metaData.wish.title }, ...previousImages],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: metaData.wish.title,
+      description: metaData.wish.description,
+      images: [image],
     },
   };
 }
