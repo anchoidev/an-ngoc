@@ -373,7 +373,8 @@ const metaData = {
   main: {
     title: "Báo Hỉ An - Ngọc | Kính Mời",
     description: "Kính mời anh/chị đến dự lễ thành hôn của An & Ngọc.",
-    graphImage: graphImage.default?.src || graphImage,
+    // Ensure graphImage is a string URL (use getImgSrc helper like other images)
+    graphImage: getImgSrc(graphImage),
   },
 
   wish: {
