@@ -12,11 +12,16 @@ async function sendTelegramMessage(payload) {
   const chatId = '7065130108';
   if (!botToken || !chatId) return false;
 
+  // Use NEXT_PUBLIC_SITE_URL when available, otherwise fallback to the given Vercel URL
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://ngoc-an-minh-ngoc.vercel.app";
+
   const message = [
     "Lời chúc mọi người dành cho An - Ngọc",
     `Tên: ${payload?.name ?? ""}`,
     `Lời chúc: ${payload?.wish ?? ""}`,
     `Tham dự: ${formatIsAttend(payload?.isAttend)}`,
+    `Trang: ${siteUrl}`,
   ].join("\n");
 
   // Telegram Bot API: https://core.telegram.org/bots/api#sendmessage
@@ -33,7 +38,8 @@ async function sendTelegramMessage(payload) {
         body: JSON.stringify({
           chat_id: chatId,
           text: message,
-          disable_web_page_preview: true,
+          // Allow web page preview in Telegram (set to false to enable preview)
+          disable_web_page_preview: false,
         }),
         signal: controller.signal,
       });

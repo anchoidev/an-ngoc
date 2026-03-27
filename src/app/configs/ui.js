@@ -372,20 +372,24 @@ const albums = [...albumA, ...albumB, ...albumC]; // for preview
 const metaData = {
   main: {
     title: "Báo Hỉ An - Ngọc | Kính Mời",
+    description: "Kính mời anh/chị đến dự lễ thành hôn của An & Ngọc.",
     graphImage: graphImage.default?.src || graphImage,
   },
 
   wish: {
     title: "Tất cả lời chúc dành cho An - Ngọc",
+    description: "Gửi lời chúc đến An - Ngọc qua trang này.",
     graphImage: getImgSrc(img10),
   },
 
   invitation: {
     title: "Báo Hỉ | Form Nhập Tên",
+    description: "Thông tin buổi lễ và cách tham dự dành cho khách mời.",
     graphImage: getImgSrc(img11),
   },
   album: {
     title: "Album của An - Ngọc`",
+    description: "Những khoảnh khắc lưu giữ của An & Ngọc.",
     graphImage: getImgSrc(img12),
   },
 };
